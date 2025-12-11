@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ART-DE-LIGHT — The Art of Light</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(180deg, #033646, #022b37);
+        color: white;
+        scroll-behavior: smooth;
+    }
+
+    h1, h2, h3 {
+        font-weight: 300;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 120px 20px 80px;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 34px;
+        text-transform: uppercase;
+    }
+
+    .hero-sub {
+        margin-top: 10px;
+        font-size: 18px;
+        opacity: 0.9;
+    }
+
+    .hero img {
+        width: 320px;
+        max-width: 90%;
+        border: 10px solid #ffffff;
+        border-radius: 6px;
+        margin-top: 30px;
+    }
+
+    .btn {
+        display: inline-block;
+        margin: 20px 10px 0;
+        padding: 12px 28px;
+        background: #f28c28;
+        color: white;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .btn:hover { background: #ff9d33; }
+
+    .section {
+        padding: 60px 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .text-block {
+        font-size: 16px;
+        line-height: 1.7;
+        max-width: 900px;
+        margin: 20px auto;
+        text-align: left;
+    }
+
+    /* GALLERY */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 28px;
+        margin-top: 40px;
+    }
+
+    .card {
+        background: rgba(255,255,255,0.06);
+        padding: 16px;
+        border-radius: 10px;
+        text-align: center;
+        backdrop-filter: blur(4px);
+        border: 2px solid rgba(255,255,255,0.15);
+        cursor: pointer;
+    }
+
+    .card img {
+        width: 100%;
+        border: 8px solid #ffffff;
+        border-radius: 4px;
+        display: block;
+    }
+
+    .card-title {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .card-desc {
+        font-size: 14px;
+        opacity: 0.9;
+        margin-top: 4px;
+    }
+
+    /* FULLSCREEN IMAGE POPUP */
+    #popup {
+        display: none;
+        position: fixed;
+        top: 0; left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.8);
+        backdrop-filter: blur(4px);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+    #popup img {
+        max-width: 90vw;
+        max-height: 90vh;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    }
+
+    #popup:active,
+    #popup img:active {
+        display: none;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 40px 20px;
+        font-size: 14px;
+        background: rgba(0,0,0,0.25);
+        margin-top: 40px;
+    }
+</style>
+</head>
+
+<body>
+
+<!-- FULLSCREEN POPUP -->
+<div id="popup" onclick="this.style.display='none'">
+    <img id="popup-img" src="" alt="Artwork">
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-title">ART-DE-LIGHT</div>
+    <div class="hero-sub">The Art of Light, Glass, and Emotion</div>
+
+    <img src="ILGAR RUSTAMBAYLI.jpg" alt="ART-DE-LIGHT Artwork">
+
+    <div>
+        <a href="#about" class="btn">About ART-DE-LIGHT</a>
+        <a href="#gallery" class="btn">Gallery</a>
+        <a href="#contact" class="btn">Contact</a>
+        <a href="#contact" class="btn">Booking / Sales</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <h2>About ART-DE-LIGHT</h2>
+    <div class="text-block">
+        <!-- your about text remains unchanged -->
+        <!
